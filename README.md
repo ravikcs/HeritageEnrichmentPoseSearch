@@ -7,12 +7,11 @@ This project work focuses on creating a visual search engine for the automatic e
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Results](#results)
 
 ## Getting Started
 
-For this work, we evaluate Yolov8's and MMpose's ViTpose-l model to estimate the human poses of artwork collections of RMFAB. For executing the code, python 3.8 or greater, 
+For this work, we evaluate Yolov8's and MMpose's ViTpose-l model to estimate the human poses of artwork collections of RMFAB. For executing the code, python 3.8 or greater is required.
 
 ## Prerequisites
 
@@ -51,8 +50,8 @@ pip install -v -e .
 
 To setup the project in your local directory:
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/ravikcs/HeritageEnrichmentPoseSearch.git
+cd HeritageEnrichmentPoseSearch
 ```
 
 ## Usage
