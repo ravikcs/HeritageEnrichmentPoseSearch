@@ -16,10 +16,34 @@ For this work, we evaluate Yolov8's and MMpose's ViTpose-l model to estimate the
 
 ## Prerequisites
 
-List any software, libraries, or packages that need to be installed before running the code. Include version numbers if applicable.
+For YOLOv8, need to install Ultralytics package as follows:
 
 ```bash
+pip install ultralytics
+```
+MMPose works on Linux, Windows and macOS. It requires Python 3.7+, CUDA 9.2+ and PyTorch 1.8+. 
+0. Download and install Anaconda
+1. Create a conda environment and activate it.
+```bash
+conda create --name openmmlab python=3.8 -y
+conda activate openmmlab
+```
+2. Install PyTorch
+```bash
+conda install pytorch torchvision -c pytorch
+```
+3. Install MMEngine and MMCV using MIM
+```bash
+pip install -U openmim
+mim install mmengine
+mim install "mmcv>=2.0.1"
+```
+To develop and run mmpose directly, install it from source:
+```bash
+git clone https://github.com/open-mmlab/mmpose.git
+cd mmpose
 pip install -r requirements.txt
+pip install -v -e .
 ```
 
 ## Installation
@@ -38,6 +62,12 @@ Explain how to use the code. Provide examples or command snippets to demonstrate
 ```bash
 python main.py --option value
 ```
+
+## Results
+Some of the successful keypoints detection by MMPose are shown below:
+
+However, the model failed to detect keypoints accurately in case of drawings, battle scenes consisting of multiple people. Drawings, as hand-drawn sketches lack well-defined body structures, often disjoint body parts, displaying too much abstraction provided hurdles for the neural network, resulting in less detectable poses. However, we plan to construct a training pipeline using MMPose on such drawings providing ground truth pose keypoints to improve the results. Alternatively, using background removal techniques before pose estimation on such drawings might as well improve the results. 
+
 
 ## Contributing
 
