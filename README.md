@@ -22,6 +22,7 @@ For YOLOv8, need to install Ultralytics package as follows:
 pip install ultralytics
 ```
 MMPose works on Linux, Windows and macOS. It requires Python 3.7+, CUDA 9.2+ and PyTorch 1.8+. 
+
 0. Download and install Anaconda
 1. Create a conda environment and activate it.
 ```bash
@@ -65,6 +66,12 @@ python main.py --option value
 
 ## Results
 Some of the successful keypoints detection by MMPose are shown below:
+
+![1](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/335d11e7-9082-4860-bab6-adfc9b1c9838)
+
+![17](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/3d8738dc-3bb4-44bc-b5c0-c99efd3c1461)
+
+![22](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/3fcef5ea-b0d8-4bce-91ea-fdb384bf7862)
 
 However, the model failed to detect keypoints accurately in case of drawings, battle scenes consisting of multiple people. Drawings, as hand-drawn sketches lack well-defined body structures, often disjoint body parts, displaying too much abstraction provided hurdles for the neural network, resulting in less detectable poses. However, we plan to construct a training pipeline using MMPose on such drawings providing ground truth pose keypoints to improve the results. Alternatively, using background removal techniques before pose estimation on such drawings might as well improve the results. 
 
