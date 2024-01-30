@@ -78,14 +78,3 @@ However, the model failed to detect keypoints accurately in case of drawings, ba
 ![35](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/5c6fe3c3-4393-4c9e-9b33-e86d9af6d4cf)
 ![38](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/c09e2ced-ea29-4bc3-b052-144cf0cf2571)
 ![45](https://github.com/ravikcs/HeritageEnrichmentPoseSearch/assets/147035848/56cf3719-b7d0-45bd-8031-7fa74f300724)
-
-
-## Contributing
-
-If you'd like to contribute to the project, provide guidelines for how others can do so. Include information about how to submit issues, propose new features, or submit pull requests.
-
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details. (Replace `[License Name]` with the actual license name and provide the license file if applicable.)
-
-Feel free to customize this template according to the specifics of your project.
